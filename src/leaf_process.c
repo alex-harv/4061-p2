@@ -47,10 +47,10 @@ int main(int argc, char* argv[]) {
         fclose(f);
 
 
-        //extract the file_name from file_path using extract_filename() in utils.c
         char* extracted_f=extract_filename(file_path);
-        //TODO(step2): extract the root directory(e.g. root1 or root2 or root3) from file_path using extract_root_directory() in utils.c
         char* extracted_root=extract_root_directory(file_path);
+
+
         //TODO(step3): get the location of the new file (e.g. "output/inter_submission/root1" or "output/inter_submission/root2" or "output/inter_submission/root3")
         //TODO(step4): create and write to file, and then close file
         //TODO(step5): free any arrays that are allocated using malloc!! Free the string returned from extract_root_directory()!! It is allocated using malloc in extract_root_directory()
